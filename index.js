@@ -136,16 +136,18 @@ function scoreboard(callback, num) {
 
   let home = 0;
   let away = 0;
-  
+
   for(let i = 0; i<num; i++){
     home = home + callback();
     away = away + callback();
+
+    console.log( "Inning " + (i+1) + ": " + home + " - " + away)
   }
 
-  if ( num >=1){
-    console.log(finalScore(inning,1));
+  if(num===9){
+    console.log("Final Score: " + home + " - " + away) 
   }
-
+  
   
 } 
 
