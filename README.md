@@ -42,6 +42,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+A closure is when a function has access to the parent scope. 
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,8 +66,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+Closure is used when the return function has to look outside of its scope to find the name. 
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+The name will always be the same and the number will change. 
+
 c. What is the lexical scope of `newRoll`? 
+
+The lexical scope of newRoll is the return function because the personalDice function cannot access newRoll because it is the parent. 
 
 ### Task 3 - Stretch Goals
 
