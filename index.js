@@ -27,11 +27,13 @@ function processFirstItem(stringList, callback) {
  * Study the code for counter1 and counter2. Answer the questions below.
  * 
  * 1. What is the difference between counter1 and counter2?
+ * You can access the count variable outside of the function in counter2.
  * 
  * 2. Which of the two uses a closure? How can you tell?
  * Counter 1 uses a closure because it is nested. 
  * 
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
+ * The counter1 is preferable when you want to keep everything inside the function for later use and counter2 is preferable when you want to keep the count seperate. 
  *
 */
 
@@ -151,5 +153,6 @@ function scoreboard(callback, num) {
   
 } 
 
-console.log(scoreboard(inning, 9))
+console.log(scoreboard(inning, 9));
+
 
